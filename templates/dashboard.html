@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricMic</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== Bootstrap ==========-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumvsuR0g6zP9mq4oqXwYZvJoofoxgiL8eP6bxII2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <div class="header__container d-flex justify-content-between align-items-center p-3">
+            <div class="d-flex align-items-center">
+                <a href="#" class="header__logo font-weight-bold">CricMic</a>
+            </div>
+
+            <div class="header__search position-relative">
+                <input type="search" placeholder="Search" class="header__input form-control">
+                <i class='bx bx-search header__icon position-absolute'
+                    style="right: 10px; top: 50%; transform: translateY(-50%);"></i>
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <img src="../static/Images/Logo.svg" alt="CricMic">
+                </a>
+
+                <div class="nav__list mt-4">
+                    <div class="nav__items">
+                        <a href="#" class="nav__link active d-flex align-items-center mb-2">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name ml-2">Dashboard</span>
+                        </a>
+
+                    <div class="nav__items mt-4">
+                        <h3 class="nav__subtitle">Menu</h3>
+
+                        <div class="nav__dropdown mb-2">
+                            <a href="/generate" class="nav__link d-flex align-items-center">
+                                <i class='bx bx-cloud-upload nav__icon'></i>
+                                <span class="nav__name ml-2">Generate</span>
+                            </a>
+                        </div>
+
+                        <a href="#" class="nav__link d-flex align-items-center mb-2">
+                            <i class='bx bxs-microphone-alt nav__icon'></i>
+                            <span class="nav__name ml-2">Voice</span>
+                        </a>
+                        <a href="#" class="nav__link d-flex align-items-center mb-2">
+                            <i class='bx bx-message-alt-dots nav__icon'></i>
+                            <span class="nav__name ml-2">Presets</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav_link nav_logout d-flex align-items-center mt-4">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name ml-2">Log Out</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <main class="container-fluid">
+        <section class="mb-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                </ol>
+                <h5 class="text-success">{{message}}</h5>
+            </nav>
+        </section>
+
+        <!-- Match Data Section -->
+        <section id="news-container" class="mb-4">
+            <!-- Match data will be dynamically loaded here by JavaScript -->
+        </section>
+
+
+        
+
+
+    </main>
+
+    <!--========== Bootstrap JS ==========-->
+    <script src="../static/js/jquery-3.5.1.slim.min.js"></script>
+
+</body>
+
+</html>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+integrity="sha384-Piv4xVNRyMGpqk76MqqnH5l/Hu7RZog4V9EpTkzSTpjfTjtZep6H1fjwRTpH3jlF"
+crossorigin="anonymous"></script>
+
+<script src="../static/js/dashboard.js"></script>
+
+
+<!-- <div class="nav__dropdown mb-2">
+    <a href="#" class="nav__link d-flex align-items-center">
+        <i class='bx bx-user nav__icon'></i>
+        <span class="nav__name ml-2">Profile</span>
+        <i class='bx bx-chevron-down nav_icon nav_dropdown-icon ml-auto'></i>
+    </a>
+
+    <div class="nav__dropdown-collapse">
+        <div class="nav__dropdown-content pl-4">
+            <a href="#" class="nav__dropdown-item">Passwords</a>
+            <a href="#" class="nav__dropdown-item">Mail</a>
+            <a href="#" class="nav__dropdown-item">Accounts</a>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="nav__link d-flex align-items-center mb-2">
+    <i class='bx bx-message-rounded nav__icon'></i>
+    <span class="nav__name ml-2">Messages</span>
+</a>
+</div> -->
