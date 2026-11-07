@@ -39,8 +39,6 @@ source venv/bin/activate
 pip install flask
 python run.py
 
-Open http://localhost:5000/dashboard. Do not use debug mode on a public server.
-
 ## My contribution
 
 - Shot classification: pose keypoints and a classifier for cricket shots.
